@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let español = document.getElementById("español");
-    español.addEventListener("click", function(){
-        document.getElementById("langSelection").style.display="none"
-        window.location.href = "español.html";
-    });
-    let ingles = document.getElementById("english");
-    ingles.addEventListener("click", function(){
-        document.getElementById("langSelection").style.display="none"
-        window.location.href = "english.html";
-    });
-  });
+    var menubutton = document.getElementById("menubutton");
+    var menu = document.getElementById("menu");
+    menubutton.addEventListener("click", function() {
+        console.log("Que tu me hiciste");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    })
+})
