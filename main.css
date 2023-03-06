@@ -31,6 +31,7 @@
   color: royalblue;
   border-bottom: 1px solid black;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 #icon {
@@ -87,15 +88,28 @@
 }
 
 section {
-  margin-top: 25px;
   padding: 0px 20px 0px 20px;
+  margin-bottom: 5rem;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 h3 {
   color: royalblue;
 }
+
 blockquote {
   flex-direction: column;
+}
+
+section blockquote:first-of-type {
+  margin-top: 0;
+}
+
+section blockquote:last-of-type {
+  margin-bottom: 0;
 }
 
 h4 .button {
