@@ -16,18 +16,22 @@
     <link rel="stylesheet" href="main.css"/>
     <script src="main.js"></script>
     <title>Benjamin Bachs</title>
+    <link rel="icon" type="image/png" href="media/pulgares.png">
 </head>
 <body>
     <header id="header">
-        <img id="Logo" src="media/pulgares.png" alt="Logo">
+        <img id="icon" src="media/pulgares.png" alt="icon">
         Benjamin Bachs
-        <button class="button-black button-clear" id="menubutton"><img src="media/language.png" alt=""></button>
+        <div id="contact-header" class="contact-div">
+            <a class="button" href="mailto:benjamin.bachs@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/32px-Gmail_icon_%282020%29.svg.png" alt=" gmail-icon "> benjamin.bachs@gmail.com</a>
+            <a class="button" href="https://www.linkedin.com/in/benjaminbachs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/32px-LinkedIn_icon.svg.png" alt=" linkedin-icon "> Benjamín Bachs</a>
+        </div>
+        <button class="button button-clear" id="language-button"><img src="media/language.png" alt=""></button>
    </header>
    <nav id="menu">
     <ul>
-      <li><a href="#">Opción 1</a></li>
-      <li><a href="#">Opción 2</a></li>
-      <li><a href="#">Opción 3</a></li>
+      <li><button id="spanish" class="button-black button-outline" >Español <span class="fi fi-ar"></span></button></li>
+      <li><button id="english" class="button-black button-outline" >English <span class="fi fi-us"></span></button></li>
     </ul>
   </nav>
   <section class="centered-container">
@@ -35,7 +39,7 @@
         ¿Quien soy?
     </h3>
     <p>
-        Hola! Mi nombre es (como podras ver en el titulo de la pagina) Benjamin Bachs. Soy estudiante de Ingeniería en Informática. Me encanta solucionar problemas, en especial si estos refieren a tecnología. Me caracterizo por ser un chico curioso y proactivo, con ganas de aprender y trabajar en equipo.
+        Hola! Mi nombre es Benjamín, tengo 19 años y soy de Tucumán, Argentina. Estudio Ingeniería en Informática y me encanta solucionar problemas, en especial si estos refieren a tecnología. Me caracterizo por ser curioso y proactivo, con ganas de aprender y trabajar en equipo.
     </p>
   </section>
   <section class="centered-container">
@@ -83,7 +87,7 @@
     </blockquote>
   </section>
   <section>
-    <h3 id="centeredtitle">
+    <h3 id="centered-title">
         Habilidades
     </h3>
     <ul>
@@ -100,7 +104,15 @@
             JavaScript
         </li>
     </ul>
-
+  </section>
+  <section id="contact" class="centered-container">
+    <h3>
+        Contacto
+    </h3>
+    <div class="contact-div">
+        <a class="button" href="mailto:benjamin.bachs@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/32px-Gmail_icon_%282020%29.svg.png" alt=" gmail-icon "> benjamin.bachs@gmail.com</a>
+        <a class="button" href="https://www.linkedin.com/in/benjaminbachs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/32px-LinkedIn_icon.svg.png" alt=" linkedin-icon "> Benjamín Bachs</a>
+    </div>
   </section>
 </body>
 </html>

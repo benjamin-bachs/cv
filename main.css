@@ -1,110 +1,190 @@
 /* Mobile First Media Queries */
 
 /* Base style */
-.button-black.button-outline
-{
-    border-color: black;
-    color: black;
+.button-black.button-outline {
+  border-color: black;
+  color: black;
 }
 
-.centered-container
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#langSelection{
-    justify-content: center;
-    height: 100vh;
+
+#centered-title {
+  text-align: center
 }
-#header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-    font-size: 3rem;
-    color: royalblue;
-    border-bottom: 1px solid black;
-    margin-bottom: 25px;;
-    font-weight: bold;
+
+#language-selection {
+  justify-content: center;
+  height: 100vh;
 }
-#Logo{
-    height: 7rem;
-    justify-self: right;
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  font-size: 2.5rem;
+  color: royalblue;
+  border-bottom: 1px solid black;
+  font-weight: bold;
 }
-#menubutton{
-    height: 5rem;
-    width: 5rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 1rem 1rem 1rem 1rem;
+
+#icon {
+  height: 7rem;
+  margin: 0 1rem 0 0;
 }
+
+#contact-header {
+  display: none;
+}
+
+#language-button {
+  margin: 0 0 0 0.3rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
 #menu {
-    display: none;
-    position: absolute;
-    top: 10rem;
-    left: 0;
-    width: 200px;
-    padding: 0;
-    margin: 0;
-  }
+  display: none;
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  width: 15rem;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul {
+  background-color: rgba(65, 105, 225, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
   
-  #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #menu li {
-    border-bottom: 1px solid #ccc;
-  }
-  
-  #menu li:last-child {
-    border-bottom: none;
-  }
-  
-  #menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  #menu a:hover {
-    background-color: #f0f0f0;
-  }
-  section{
-    padding: 0px 20px 0px 20px;
-  }
-  h3{
-    color: royalblue;
-  }
-  blockquote{
-    flex-direction: column;
-  }
-  h4 .button{
-    width: 13rem;
-    height: 3.5rem;
-    border-color: black;
-    background-color: royalblue;
-    float: right;
-    padding: 0;
-  }
-  #centeredtitle{
-    text-align: center
-  }
+#menu li {
+  margin: 0;
+}
+
+#menu li button {
+  background-color: white;
+  opacity: 1;
+}
+
+#menu li:first-child button {
+  margin-top: 1rem;
+}
+
+#menu li:last-child button {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-top: 25px;
+  padding: 0px 20px 0px 20px;
+}
+
+h3 {
+  color: royalblue;
+}
+blockquote {
+  flex-direction: column;
+}
+
+h4 .button {
+  width: 13rem;
+  height: 3.5rem;
+  border-color: black;
+  background-color: royalblue;
+  float: right;
+  padding: 0;
+}
+
+#contact {
+  color: royalblue;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-div a {
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  width:fit-content;
+  height: fit-content;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.contact-div a img {
+  margin: 0 1rem 0 0;
+}
+
 /* Larger than mobile screen */
-@media (min-width: 40.0rem)
-{
+@media (min-width: 40.0rem) {
+  section {
+    padding: 0px 25vw 0px 25vw;
+  }
+  #menu {
+    top: 0;
+  }
 }
 
 /* Larger than tablet screen */
-@media (min-width: 80.0rem)
-{
+@media (min-width: 80.0rem) {
+  section {
+    padding: 0px 30vw 0px 30vw;
+  }
+  
+  #header {
+    justify-content: flex-start;
+  }
+  
+  #icon {
+    margin-left: 1rem;
+  }
+
+  #contact-header {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  #language-button {
+    margin-right: 1rem;
+  }
+
+  #menu {
+    top: 10rem;
+  }
+
+  .contact-div a {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  #contact {
+    display: none;
+  }
 }
 
 /* Larger than desktop screen */
-@media (min-width: 120.0rem)
-{
-
+@media (min-width: 120.0rem) {
+  section {
+    padding: 0px 35vw 0px 35vw;
+  }
 }
