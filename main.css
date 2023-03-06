@@ -102,6 +102,11 @@ h3 {
 
 blockquote {
   flex-direction: column;
+  width: 100%;
+}
+
+section blockquote image {
+  width: 100%;
 }
 
 section blockquote:first-of-type {
