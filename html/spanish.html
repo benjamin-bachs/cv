@@ -1,122 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <!-- Milligram CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Banderas -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="main.css"/>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="../css/style.css"/>
     <title>Benjamin Bachs</title>
-    <link rel="icon" type="image/png" href="media/pulgares.png">
+    <link rel="icon" type="image/png" href="../media/logo.png">
 </head>
 <body>
-    <header id="header">
-        <img id="icon" src="media/pulgares.png" alt="icon">
-        Benjamín Bachs
-        <div id="contact-header" class="contact-div">
-            <a class="button" href="mailto:benjamin.bachs@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/32px-Gmail_icon_%282020%29.svg.png" alt=" gmail-icon "> benjamin.bachs@gmail.com</a>
-            <a class="button" href="https://www.linkedin.com/in/benjaminbachs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/32px-LinkedIn_icon.svg.png" alt=" linkedin-icon "> Benjamín Bachs</a>
-        </div>
-        <button class="button button-clear" id="language-button"><img src="media/language.png" alt=""></button>
+    <header class="container-fluid text-center d-flex flex-row align-items-center">
+            <img class="h-75" src="../media/logo.png" alt="icon">
+            <h1 class="me-auto">Benjamin Bachs</h1>
+            <a class="btn btn-outline-dark icon-container d-none d-lg-flex" href="mailto:benjamin.bachs@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/32px-Gmail_icon_%282020%29.svg.png" alt="gmail-icon"> benjamin.bachs@gmail.com</a>
+            <a class="btn btn-outline-dark icon-container d-none d-lg-flex" href="https://www.linkedin.com/in/benjaminbachs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/32px-LinkedIn_icon.svg.png" alt="linkedin-icon"> Benjamín Bachs</a>
+            <div class="dropdown-center">
+                <button class="btn btn-outline-dark dropdown-toggle btn-sm icon-container" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../media/language.png" alt="">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="spanish.html"><span class="fi fi-ar"></a></li>
+                  <li><a class="dropdown-item" href="english.html"><span class="fi fi-us"></a></li>
+                </ul>
+            </div>
    </header>
-   <nav id="menu">
-    <ul>
-      <li><button id="spanish" class="button-black button-outline" >Español <span class="fi fi-ar"></span></button></li>
-      <li><button id="english" class="button-black button-outline" >English <span class="fi fi-us"></span></button></li>
-    </ul>
-  </nav>
-  <section class="centered-container">
-    <h3>
-        ¿Quien soy?
-    </h3>
-    <p>
-        Hola! Mi nombre es Benjamín, tengo 19 años y soy de Tucumán, Argentina. Estudio Ingeniería en Informática y me encanta solucionar problemas, en especial si estos refieren a programación. Me caracterizo por ser curioso y proactivo, con ganas de aprender y trabajar en equipo.
-    </p>
-    <img src="media/yo.jpg" alt="Foto de Benjamín">
-  </section>
-  <section class="centered-container">
-    <h3>
-        Educación
-    </h3>
-    <blockquote>
-        <h4>
-            Curso
-            <a id="curso1" href="https://coursera.org/share/77074c42996be0d54cb0fa37aa352eae" class="button"> Ver certificado</a>
-        </h4>
-        <h5>
-            Programming Foundations with JavaScript, HTML and CSS
-        </h5>
-        <h6>
-            Duke University
-        </h6>
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/1d/9ab6c01a0711e5aafd874ac89d7e65/digital-388075_1280.jpg" alt="">
-    </blockquote>
-    <blockquote>
-        <h4>
-            Curso
-            <a href="https://coursera.org/share/d1eaff1a2ab36e691d4b75c36637ccb4" class="button"> Ver certificado</a>
-        </h4>
-        <h5>
-            Java Programming: Solving Problems with Software
-        </h5>
-        <h6>
-            Duke University
-        </h6>
-        <img id="bigimage" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/b6/2019201a9e11e5ace08b26adce8cb5/Java.png" alt="">
-    </blockquote>
-    <blockquote>
-        <h4>
-            Curso
-            <a href="https://coursera.org/share/401e521de77c0073f7adbaac3a0ac062" class="button"> Ver certificado</a>
-        </h4>
-        <h5>
-            Java Programming: Arrays, Lists, and Structured Data
-        </h5>
-        <h6>
-            Duke University
-        </h6>
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/45/3b4810378111e5aec5ffdf45dcbb85/work-731198_1280.jpg" alt="">
-    </blockquote>
-  </section>
-  <section>
-    <h3 id="centered-title">
-        Habilidades
-    </h3>
-    <ul>
-        <li>
-            Java
-        </li>
-        <li>
-            HTML
-        </li>
-        <li>
-            CSS
-        </li>
-        <li>
-            JavaScript
-        </li>
-        <li>
-            Trabajo en equipo
-        </li>
-    </ul>
-  </section>
-  <section id="contact" class="centered-container">
-    <h3>
-        Contacto
-    </h3>
-    <div class="contact-div">
-        <a class="button" href="mailto:benjamin.bachs@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/32px-Gmail_icon_%282020%29.svg.png" alt=" gmail-icon "> benjamin.bachs@gmail.com</a>
-        <a class="button" href="https://www.linkedin.com/in/benjaminbachs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/32px-LinkedIn_icon.svg.png" alt=" linkedin-icon "> Benjamín Bachs</a>
-    </div>
-  </section>
+   <main class="container text-center">
+       <section>
+        <h2>
+            Yo
+        </h2>
+        <p>
+            Desde pequeño siempre fuí curioso y me gustaba resolver problemas, todo comenzó en mi familia con mi papá. A él le gustaba emplear su tiempo libre en el taller y cuando carecíamos de alguna herramienta para un trabajo específico, buscábamos siempre la manera de resolverlo con lo que teníamos.  
+        </p>
+        <p>
+            En la primaria desarrollé una afinidad por las matemáticas mientras conocía el maravilloso mundo de la tecnología desde computadora en casa. Durante el secundario, y gracias a mi hermano, me interesé mucho en la programación por lo cual decidí estudiar Ingeniería en Informática, me da la oportunidad de exprimir mis habilidades mediante el desarrollo de software. 
+        </p>
+        <p>
+            Hoy me encuentro por comenzar mi tercer año universitario con un enorme entusiasmo de seguir aprendiendo y principalmente poder aportar mis conocimientos para el desarrollo de un proyecto en equipo. Este deseo se aviva cuando veo a mi hermano Ingeniero en Computación haciendo cosas geniales en su trabajo.
+        </p>
+        <img class="img-fluid" src="../media/yo.jpg" alt="Foto de Benjamín">
+      </section>
+      <section>
+        <h2>
+            Educación
+        </h2>
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <h4>Curso</h4>
+                  </div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/1d/9ab6c01a0711e5aafd874ac89d7e65/digital-388075_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">Programming Foundations with JavaScript, HTML and CSS</h6>
+                  <a href="https://coursera.org/share/77074c42996be0d54cb0fa37aa352eae" class="btn btn-primary">Ver certificado</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <h4>Curso</h4>
+                  </div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/b6/2019201a9e11e5ace08b26adce8cb5/Java.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">Java Programming: Solving Problems with Software</h6>
+                  <a href="https://coursera.org/share/d1eaff1a2ab36e691d4b75c36637ccb4" class="btn btn-primary">Ver certificado</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <h4>Curso</h4>
+                  </div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/45/3b4810378111e5aec5ffdf45dcbb85/work-731198_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">Java Programming: Arrays, Lists, and Structured Data</h6>
+                  <a href="https://coursera.org/share/401e521de77c0073f7adbaac3a0ac062" class="btn btn-primary">Ver certificado</a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <h2 id="centered-title">
+            Habilidades
+        </h2>
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly">
+            <button class="btn btn-outline-dark icon-container"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="php-icon">php</button>
+            <button class="btn btn-outline-dark icon-container"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="mysql-icon">MySQL</button>
+            <button class="btn btn-outline-dark icon-container"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html-icon">HTML</button>
+            <button class="btn btn-outline-dark icon-container"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="css-icon">CSS</button>
+            <button class="btn btn-outline-dark icon-container"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="javascript-icon">JavaScript</button>
+            <button class="btn btn-outline-dark icon-container"><img src="https://ubiqum.com/assets/uploads/2021/12/aprender-java-con-ubiqum-logo.png" alt="java-icon">Java</button>
+            <button class="btn btn-outline-dark icon-container"><img src="https://icons.veryicon.com/png/o/miscellaneous/site-icon-library/team-28.png" alt="team">Trabajo en equipo</button>
+        </div>
+      </section>
+      <section class="d-lg-none">
+        <h2>
+            Contacto
+        </h2>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <a class="btn btn-outline-dark icon-container" href="mailto:benjamin.bachs@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/32px-Gmail_icon_%282020%29.svg.png" alt=" gmail-icon "> benjamin.bachs@gmail.com</a>
+            <a class="btn btn-outline-dark icon-container" href="https://www.linkedin.com/in/benjaminbachs/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/32px-LinkedIn_icon.svg.png" alt=" linkedin-icon "> Benjamín Bachs</a>
+        </div>
+      </section>
+   </main>
+  <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

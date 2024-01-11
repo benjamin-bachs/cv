@@ -1,0 +1,54 @@
+
+body{
+    min-height: 10rem;
+}
+
+a{
+    width: fit-content;
+}
+
+.dropdown-menu{
+    --bs-dropdown-min-width: 4rem;
+}
+
+.icon-container{
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0.5rem;
+}
+
+.icon-container > *{
+    margin-right: 0.5rem;
+    height: 100%;
+}
+
+header{
+    height: 20vh;
+}
+
+section{
+    margin: 6rem;
+}
+
+h1, header img{
+    margin: 0.5rem;
+}
+
+h2{
+    margin: 2rem;
+}
+
+h6{
+    --bs-card-title-spacer-y: 1rem;
+}
+.card-header{
+    --bs-card-cap-bg: white;
+}
+
+.card{
+    margin: 0 2rem 2rem;
+}
